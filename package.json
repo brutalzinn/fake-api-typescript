@@ -14,13 +14,14 @@
     "lint:fix": "npm run lint -- --fix",
     "deploy:prod": "npm run build && pm2 start ecosystem.config.js --only prod",
     "deploy:dev": "pm2 start ecosystem.config.js --only dev",
-    "swagger": "node swagger.js"
-
+    "swagger": "node swagger.js",
+    "cli": "npm run cli/index.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
+    "commander": "^9.2.0",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -34,6 +35,7 @@
     "swagger-autogen": "^2.21.1",
     "swagger-jsdoc": "^6.0.0",
     "swagger-ui-express": "^4.1.6",
+    "uninstall": "^0.0.0",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.5"
   },
