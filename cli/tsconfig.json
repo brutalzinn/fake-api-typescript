@@ -95,7 +95,17 @@
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
 
     /* Completeness */
-    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+    // "skipDefaultLibCheck": true,   
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@config": ["config"],
+      "@dtos/*": ["dtos/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@models/*": ["models/*"],
+    },
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }
 }
